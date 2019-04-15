@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+	<head>
+		<meta charset="utf-8">
+		<title>Menjadi seorang peretas (;) | @fajar.agungn</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../css/style.css" type='text/css'>
+	    <link rel="shortcut icon" href="../favicon.ico">
+	    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+	</head>
+	<body >
+		<header>
+			<nav> <a target="_blank" href='https://id.wikipedia.org/wiki/P'> /☺BudayakanP</a> </nav>
+        <div id="theme">
+            <div onclick="setDarkMode(true)" id="darkBtn" class=""> 🌚  <span>Dark</span></div>
+            <div onclick="setDarkMode(false)" id="lightBtn" class="is-hidden"> 🌝 <span>Light</span> </div>
+        </div>
+
+        <script>
+            //check localstorage
+            if(localStorage.getItem('preferredTheme') == 'dark') {
+                setDarkMode(true)
+            }
+
+            function setDarkMode(isDark) {
+                var darkBtn = document.getElementById('darkBtn')
+                var lightBtn = document.getElementById('lightBtn')
+
+                if(isDark) {
+                    lightBtn.style.display = "block"
+                    darkBtn.style.display = "none"
+                    localStorage.setItem('preferredTheme', 'dark');
+                } else {
+                    lightBtn.style.display = "none"
+                    darkBtn.style.display = "block"
+                    localStorage.removeItem('preferredTheme');
+                }
+
+                document.body.classList.toggle("darkmode");
+            }
+        </script>
+	</header>
+
+		<section>
+		    
+
+			<hr>
+			<h3>Bagaimana cara meretas? Bagaimana cara melakukannya?😁</h3>
+			<p>
+				Pertanyaan sebenarnya adalah bukan bagaimana caranya untuk meretas, tapi apakah bisa saya melakukannya?<br>
+				&emsp;&emsp;Banyak orang yang beranggapan bahwa menjadi seorang <a target="_blank" href="https://id.wikipedia.org/wiki/Peretas">peretas</a> atau hacker harus bisa menguasai ilmu/seluk beluk komputer terlebih dahulu, memang betul. dalam mempelajari komputer kita harus dituntut untuk mencari tahu/mencoba hal hal baru dalam bermain komputer, mencoba mencari masalah/error yang terjadi pada sebuah komputer, dan memecahkan masalah tersebut. Apakah menjadi seorang peretas harus bisa matematika? Tentu tidak, akan tetapi matematika merupakan pondasi kuat dalam membuat suatu program didunia komputer, disamping itu bahasa pemrograman seperti C++, C#, PHP, Python, JavaScript dll, juga menggunakan matematika dalam membuat aplikasi Web, Mobile, atau Desktop. Pertanyaan terakhir yang saya sering dengar adalah :  <h3>Apakah menjadi seorang peretas harus bisa menguasai bahasa inggris?🤔</h3>
+				&emsp;&emsp;Jawabanya Wajib bisa bahasa inggris, minimal tau bahasa apa saja yg sering muncul didalam komputer..Bagi kalian yang ingin belajar bahasa inggris cukup klik <a target="_blank" href="https://squline.com/dasar-belajar-bahasa-inggris/">Link Ini!</a><br><br>
+				&emsp;&emsp;
+					
+
+			
+			<br><br>
+
+
+ <h5>Mon Mar 18, 2019</h5>
+			</p>
+
+			<hr>
+		</section>
+		<br><a href="https://fajarbaiz.github.io/me/"><< Kembali ke Halaman Awal</a>
+	</body>
+</html>

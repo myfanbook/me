@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+	<head>
+		<meta charset="utf-8">
+		<title>Menjelajahi kota orang | @fajar.agungn</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../css/style.css" type='text/css'>
+	    <link rel="shortcut icon" href="../favicon.ico">
+	    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+	</head>
+	<body >
+		<header>
+			<nav> <a target="_blank" href='https://id.wikipedia.org/wiki/P'> /☺BudayakanP</a> </nav>
+        <div id="theme">
+            <div onclick="setDarkMode(true)" id="darkBtn" class=""> 🌚  <span>Dark</span></div>
+            <div onclick="setDarkMode(false)" id="lightBtn" class="is-hidden"> 🌝 <span>Light</span> </div>
+        </div>
+
+        <script>
+            //check localstorage
+            if(localStorage.getItem('preferredTheme') == 'dark') {
+                setDarkMode(true)
+            }
+
+            function setDarkMode(isDark) {
+                var darkBtn = document.getElementById('darkBtn')
+                var lightBtn = document.getElementById('lightBtn')
+
+                if(isDark) {
+                    lightBtn.style.display = "block"
+                    darkBtn.style.display = "none"
+                    localStorage.setItem('preferredTheme', 'dark');
+                } else {
+                    lightBtn.style.display = "none"
+                    darkBtn.style.display = "block"
+                    localStorage.removeItem('preferredTheme');
+                }
+
+                document.body.classList.toggle("darkmode");
+            }
+        </script>
+	</header>
+
+		<section>
+		    
+
+			<hr>
+			<h3> Menjelajahi kota orang </h3>
+			<p>
+				&emsp;banyak orang bilang kalau kita harus keluar dari zona nyaman, melawan rasa malas yg melekat pada diri ini. Sabtu 6 April 2019 ,dikala Ujian telah ditakluki oleh segelintir warga +62 di bumi ini, dikala itu juga kami para makhluk +62 menikmati hidup di KOTA ORANG...<br><br>
+				&emsp;beda? jelas. gaya hidup yg sederhana dan budaya menjadi ciri khas pedesaan, kualitas manusia & attitude nya sangat berbeda dari masyarakat perkotaan. Hal itu menumbuhkan keingin tahuan saya & berfikir lebih jauh pada perbedaan tersebut. 
+				
+			
+			<br><br>
+
+
+ <h5>Fri Apr 12, 2019</h5>
+			</p>
+
+			<hr>
+		</section>
+		<br><a href="https://fajarbaiz.github.io/me/"><< Kembali ke Halaman Awal</a>
+	</body>
+</html>

@@ -12,6 +12,7 @@ SELAMAT BELAJAR, JANGAN JADI ORANG BIASA !!! HUSST JANGAN BILANG BILANG UDAH LIA
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <title>FanBook | Membaca kapan saja, apa saja, dimana saja!</title>
   <link rel="shortcut icon" href="favicon.ico">
 </head>
@@ -94,40 +95,53 @@ SELAMAT BELAJAR, JANGAN JADI ORANG BIASA !!! HUSST JANGAN BILANG BILANG UDAH LIA
 
 
 
+<div class="w3-container">
+</div>
 
- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="images/slide/1.png" alt="First slide">
-            <div class="carousel-caption d-none d-md-block">
-              <p>asfafafasfaf</p>
-              <a href="#" class="badge badge-secondary">Lihat selengkapnya..</a>
-            </div>
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="images/slide/3.png" alt="Second slide">
-          <div class="carousel-caption d-none d-md-block">
-              <p>asfafafasfaf</p>
-              <a href="#" class="badge badge-secondary">Lihat selengkapnya..</a>
-            </div>
-        </div>
-        
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span style="color: black; font-weight: bold;" class="sr-only-dark">PREV</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span style="color: black; font-weight: bold;" class="sr-only-dark">NEXT</span>
-      </a>
-    </div>
+<div class="w3-content" style="max-width:700px">
+  <img class="mySlides" src="images/slide/4.png" style="width:100%">
+  <img class="mySlides" src="images/slide/3.png" style="width:100%">
+  <img class="mySlides" src="img_mountains_wide.jpg" style="width:100%">
+</div>
+
+<div class="w3-center">
+  <div class="w3-section">
+    <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+    <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
   </div>
+  <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
+  <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
+  <button class="w3-button demo" onclick="currentDiv(3)">3</button> 
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
+</script>
 
 
 <!--jumbotron-->
@@ -138,14 +152,16 @@ SELAMAT BELAJAR, JANGAN JADI ORANG BIASA !!! HUSST JANGAN BILANG BILANG UDAH LIA
 <div class="container">
 <div class="row">
   <div class="col-sm-8">
+    <center>
     <nav aria-label="">
-      <ol class="garis">
-        <a style="color: blue;" href="#">Home</a>&nbsp;/&nbsp;
-        <a style="color: grey;" href="#article">Article</a>&nbsp;/&nbsp;
-        <a style="color: grey;" href="#buku">Buku</a>&nbsp;/&nbsp;
+      <ol class="">
+        <a style="color: blue;" href="#">Home</a>&emsp;
+        <a style="color: grey;" href="#article">Article</a>&emsp;
+        <a style="color: grey;" href="#buku">Buku</a>&emsp;
         <a style="color: grey;" href="#ebook">EBook</a>
       </ol>
     </nav>
+    </center>
     
     <br>
     <div class="hitam">

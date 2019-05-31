@@ -15,7 +15,33 @@ SELAMAT BELAJAR, JANGAN JADI ORANG BIASA !!! HUSST JANGAN BILANG BILANG UDAH LIA
   <title>FanBook | Membaca kapan saja, apa saja, dimana saja!</title>
   <link rel="shortcut icon" href="favicon.ico">
 </head>
-<body style="background-color: #fff;">
+<body>
+
+  <script>
+            
+            if(localStorage.getItem('preferredTheme') == 'dark') {
+                setDarkMode(true)
+            }
+
+            function setDarkMode(isDark) {
+                var darkBtn = document.getElementById('darkBtn')
+                var lightBtn = document.getElementById('lightBtn')
+
+                if(isDark) {
+                    lightBtn.style.display = "block"
+                    darkBtn.style.display = "none"
+                    localStorage.setItem('preferredTheme', 'dark');
+                } else {
+                    lightBtn.style.display = "none"
+                    darkBtn.style.display = "block"
+                    localStorage.removeItem('preferredTheme');
+                }
+
+                document.body.classList.toggle("darkmode");
+            }
+        </script>
+        <br>
+         
 
   <!--navbar-->
   <div class="b"> 
@@ -47,11 +73,16 @@ SELAMAT BELAJAR, JANGAN JADI ORANG BIASA !!! HUSST JANGAN BILANG BILANG UDAH LIA
       <li class="nav-item">
         <a class="nav-link" href="artikel/index.html">Article</a>
       </li>
+      
+
     </ul>
     <ul class="nav justify-content-end">
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">Help</a>
-      </li>
+        <div id="theme">
+            <div onclick="setDarkMode(true)" id="darkBtn" class=""> 🌚 Dark</div>
+            <div onclick="setDarkMode(false)" id="lightBtn" class="is-hidden"> <span>🌝 Light </span></div>
+        </div>
+        </li>
       <li class="nav-item">
         <a class="nav-link disabled" href="#">👤 Login</a>
       </li>
@@ -63,6 +94,7 @@ SELAMAT BELAJAR, JANGAN JADI ORANG BIASA !!! HUSST JANGAN BILANG BILANG UDAH LIA
 </div>
 <br><br>
 <!--jumbotron-->
+<div class="khusus">
 <div class="container">
 <div class="row">
   <div class="col-sm-8">
@@ -119,12 +151,11 @@ SELAMAT BELAJAR, JANGAN JADI ORANG BIASA !!! HUSST JANGAN BILANG BILANG UDAH LIA
 <br>
 
 <div class="container">
-
 <div class="row">
   <div class="col-sm-8">
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <a href="#">Home</a>&nbsp;/&nbsp;
+    <nav aria-label="">
+      <ol class="garisl">
+        <a style="color: blue;" href="#">Home</a>&nbsp;/&nbsp;
         <a style="color: grey;" href="#article">Article</a>&nbsp;/&nbsp;
         <a style="color: grey;" href="#buku">Buku</a>&nbsp;/&nbsp;
         <a style="color: grey;" href="#ebook">EBook</a>
@@ -132,47 +163,49 @@ SELAMAT BELAJAR, JANGAN JADI ORANG BIASA !!! HUSST JANGAN BILANG BILANG UDAH LIA
     </nav>
     
     <br>
+    <div class="hitam">
     <div id="article">
     <h1>Artikel (dari yang terbaru)</h1><br>
     </div>
 
-    <div class="card">
+    <div class="">
       <div class="card-header" style="font-weight: bold;">
         Berfikir Matang
       </div>
       <div class="card-body">
         <p class="card-text">Pendapat saya tentang berfikir & pola berfikir anak anak hingga remaja, Serta..</p>
-        <a href="artikel/blog/berfikir_matang.html" class="btn btn-dark">Selengkapnya..</a>
+        <a href="artikel/blog/berfikir_matang.html" class="btn btn-primary">Selengkapnya..</a>
       </div>
       <div class="card-footer text-muted">
         - Sun Apr 14, 2019
       </div>
     </div><br>
 
-    <div class="card">
+    <div class="">
       <div class="card-header" style="font-weight: bold;">
         Menjelajah diKota orang
       </div>
       <div class="card-body">
         <p class="card-text">banyak orang bilang kalau kita harus keluar dari zona nyaman, melawan rasa malas yg melekat pada diri ini. Sabtu 6 April 2019..</p>
-        <a href="artikel/blog/menjelajahi_kota_orang.html" class="btn btn-dark">Selengkapnya..</a>
+        <a href="artikel/blog/menjelajahi_kota_orang.html" class="btn btn-primary">Selengkapnya..</a>
       </div>
       <div class="card-footer text-muted">
         - Fri Apr 12, 2019
       </div>
     </div><br>
 
-    <a class="btn btn-warning" href="#" role="button">Lihat artikel lainnya..</a>
+    <a class="btn btn-info" href="#" role="button">Lihat artikel lainnya..</a>
     <hr>
 
   </div>
+</div>
 
 <div class="col-sm-4">
-<div class="card" style="width: 18rem;">
+<div class="garis" style="width: 18rem;">
   <div class="card-body">
-    <h5 class="card-title">Menulis Munir</h5>
+    <h5 class="card-title">Menulis Munir</h5><hr>
     <h6 class="card-subtitle mb-2 text-muted">Sosial & Politic</h6>
-    <p class="card-text">Menulis Munir, Merawat Ingatan menjadi suatu program Sekolah Tinggi Hukum Indonesia Jentera (STHI Jentera) bersama para penerima beasiswa Munir Said Thalib dan Pusat Studi Hukum dan Kebijakan Indonesia (PSHK).</p>
+    <p class="card-text">Menulis Munir, Merawat Ingatan menjadi suatu program Sekolah Tinggi Hukum Indonesia Jentera (STHI Jentera) bersama para penerima beasiswa Munir Said Thalib dan Pusat Studi Hukum dan Kebijakan Indonesia (PSHK).</p><hr>
     <a href="#" class="card-link">Unduh</a>
     <a href="#" class="card-link">Baca</a>
   </div>
@@ -183,6 +216,7 @@ SELAMAT BELAJAR, JANGAN JADI ORANG BIASA !!! HUSST JANGAN BILANG BILANG UDAH LIA
 
 </div><br>
     <hr>
+  </div>
   </div>
 
 

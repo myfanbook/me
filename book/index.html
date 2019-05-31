@@ -1,0 +1,134 @@
+<!-- =====================================================================================================
+============================== Halooo !!! ngintip aja bro ================================================
+==========================================================================================================
+
+NYARI APA NIH? HEHE...
+SELAMAT BELAJAR, JANGAN JADI ORANG BIASA !!! HUSST JANGAN BILANG BILANG UDAH LIAT INI !-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" type="text/css" href="slide/style.css">
+  <title>FanBook | Membaca kapan saja, apa saja, dimana saja!</title>
+  <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+
+  <script>
+            
+            if(localStorage.getItem('preferredTheme') == 'dark') {
+                setDarkMode(true)
+            }
+
+            function setDarkMode(isDark) {
+                var darkBtn = document.getElementById('darkBtn')
+                var lightBtn = document.getElementById('lightBtn')
+
+                if(isDark) {
+                    lightBtn.style.display = "block"
+                    darkBtn.style.display = "none"
+                    localStorage.setItem('preferredTheme', 'dark');
+                } else {
+                    lightBtn.style.display = "none"
+                    darkBtn.style.display = "block"
+                    localStorage.removeItem('preferredTheme');
+                }
+
+                document.body.classList.toggle("darkmode");
+            }
+        </script>
+        <br><br>
+         
+
+  <!--navbar-->
+  <div class=""> 
+    <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+  <a class="navbar-brand" href="index.html">&emsp;📖&emsp;@fanbook</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://fajarbaiz.com/modul/">Ebook</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Book
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Saintek</a>
+          <a class="dropdown-item" href="book/sosialpolitik/index.html">Sosial & Politic</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="book/index.html">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="artikel/index.html">Article</a>
+      </li>
+      
+
+    </ul>
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <div id="theme">
+            <div onclick="setDarkMode(true)" id="darkBtn" class=""> 🌚 Dark</div>
+            <div onclick="setDarkMode(false)" id="lightBtn" class="is-hidden"> <span>🌝 Light </span></div>
+        </div>
+        </li>
+    </ul>
+    <!--navbar-->
+
+  </div>
+</nav>
+</div><br>
+
+<div class="container">
+	
+</div>
+
+
+
+
+
+<!--Artikel-->
+
+
+
+<!--footer-->
+<footer class="" style="height: 100px;">
+  <div class="container">
+  <div class="footer" style="text-align: center;" >
+    Follow :
+    <a target="_blank" href="https://www.instagram.com/myfanbook/?hl=id"><img src="../images/ig.png"></a>
+    <a target="_blank" href="https://twitter.com/fajaragungn25"><img src="../images/twitt.png" height="22px"></a>&nbsp;
+    <a target="_blank" href="https://www.facebook.com/fajaragungn98"><img src="../images/fb.png" height="24px"></a>
+    <p style="color: black;"><br>Copyright © 2019 | Author <a href="https://fajarbaiz.github.io/me/" target="_blank" style="color:grey; ">Fajar Agung Nugroho</a></p>
+    <br>
+  </div>
+  </div>
+</footer>
+<!--footer-->
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  
+</body>
+</html>
